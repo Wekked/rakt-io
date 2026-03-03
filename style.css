@@ -150,4 +150,25 @@ footer p{font-size:14px;color:var(--gray-500)}
   .proof-grid{grid-template-columns:1fr}
   .step{flex-direction:column;gap:12px}
   .step-num{font-size:36px}
+  -- 3/3/2026 Added walk-in image to hero section
+  .hero-split {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+  max-width: 1120px;
 }
+.hero-image {
+  flex: 1;
+  min-width: 0;
+}
+.hero-image img {
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+}
+@media (max-width: 768px) {
+  .hero-split { flex-direction: column; }
+  .hero-image { margin-top: 32px; }
+}
+}
+-- end add hero
